@@ -1,0 +1,56 @@
+{
+    "movie_tagging":{
+        "prompt": "### User Instruction:\nWhich tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\nDescription: {} Tag:",
+        "full_prompt": "### User Instruction:\nWhich tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\nDescription: {} Tag: {}",
+        "retrieval_history": "Description: {description} Tag: {tag}\n",
+        "retrieval_query": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation.\n Description: {description}",
+        "retrieval_query_wokey": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation.\n Description: {}",
+        "OPPU_input": "### User Instruction:\nWhich tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\nDescription: {description} Tag:",
+        "OPPU_full": "### User Instruction:\nWhich tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\nDescription: {description} Tag: {tag}"
+    },
+    "citation":{
+        "prompt": "### User Instruction:\nIdentify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work. Please respond with only the number that corresponds to the reference.\nPaper Title: {}\nReference: [1] - {} [2] - {}\nAnswer:",
+        "full_prompt": "### User Instruction:\nIdentify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work. Please respond with only the number that corresponds to the reference.\nPaper Title: {}\nReference: [1] - {} [2] - {}\nAnswer: {}",
+        "retrieval_history": "Paper Title: {title}\n",
+        "retrieval_query": "Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work. Please respond with only the number that corresponds to the reference.\npaper title: {title}",
+        "retrieval_query_wokey": "Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work. Please respond with only the number that corresponds to the reference.\npaper title: {}",
+        "OPPU_input": "Paper Title: {title} Reference:",
+        "OPPU_full": "Paper Title: {title} Reference: {citation}"
+    },
+    "news_headline":{
+        "prompt": "### User Instruction:\nGenerate a headline for the following article.\nArticle: {} Headline:",
+        "full_prompt": "### User Instruction:\nGenerate a headline for the following article.\nArticle: {} Headline: {}",
+        "retrieval_history": "Article: {text} Headline: {title}\n",
+        "retrieval_query": "Generate a headline for the following article: {text}",
+        "retrieval_query_wokey": "Generate a headline for the following article: {}",
+        "OPPU_input": "### User Instruction:\nGenerate a headline for the following article.\nArticle: {text} Headline:",
+        "OPPU_full": "### User Instruction:\nGenerate a headline for the following article.\nArticle: {text} Headline: {title}"
+    },
+    "product_rating":{
+        "prompt": "### User Instruction:\nWhat is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation.\nReview: {} Score:",
+        "full_prompt": "### User Instruction:\nWhat is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation.\nReview: {} Score: {}",
+        "retrieval_history": "Review: {text} Score: {score}\n",
+        "retrieval_query": "What is the score of the following review on a scale of 1 to 5? review: {text}",
+        "retrieval_query_wokey": "What is the score of the following review on a scale of 1 to 5? review: {}",
+        "OPPU_input": "### User Instruction:\nWhat is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation.\nReview: {text} Score:",
+        "OPPU_full": "### User Instruction:\nWhat is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation.\nReview: {text} Score: {score}"
+    },
+    "scholarly_title": {
+        "prompt": "### User Instruction:\nGenerate a title for the following abstract of a paper.\nAbstract: {} Title:",
+        "full_prompt": "### User Instruction:\nGenerate a title for the following abstract of a paper.\nAbstract: {} Title: {}",
+        "retrieval_history": "abstract: {abstract} title: {title}\n",
+        "retrieval_query": "Generate a title for the following abstract of a paper: {abstract}",
+        "retrieval_query_wokey": "Generate a title for the following abstract of a paper: {}",
+        "OPPU_input": "Generate a title for the following abstract of a paper.\n abstract: {abstract} title:",
+        "OPPU_full": "Generate a title for the following abstract of a paper.\n abstract: {abstract} title: {title}"
+    },
+    "tweet_paraphrase":{
+        "prompt": "### User Instruction:\nParaphrase the following text into tweet without any explanation before or after it.\nText: {} Tweet:",
+        "full_prompt": "### User Instruction:\nParaphrase the following text into tweet without any explanation before or after it.\nText: {} Tweet: {}",
+        "retrieval_history": "Tweet: {text}\n",
+        "retrieval_query": "Paraphrase the following text into tweet without any explanation before or after it: {text}",
+        "retrieval_query_wokey": "Paraphrase the following text into tweet without any explanation before or after it: {}",
+        "OPPU_input": "Tweet:",
+        "OPPU_full": "Tweet: {text}"
+    }
+}
